@@ -10,7 +10,9 @@
     "deploy:test": "export SLS_DEBUG=* && serverless deploy --stage test --aws-profile test",
     "deploy:prod": "export SLS_DEBUG=* && serverless deploy --stage prod --aws-profile prod",
     "lint": "node_modules/.bin/standard src/**",
-    "lint:fix": "node_modules/.bin/standard --fix src/**"
+    "lint:fix": "node_modules/.bin/standard --fix src/**",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -36,6 +38,8 @@
     "cheerio": "^1.0.0-rc.2",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
-    "twit": "^2.2.11"
-  }
+    "twit": "^2.2.11",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
