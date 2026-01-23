@@ -33,9 +33,9 @@
   "dependencies": {
     "@rpidanny/nietzsche.js": "^1.1.0",
     "a4js": "0.0.4",
-    "cheerio": "^1.0.0-rc.2",
+    "cheerio": "^1.0.0",
     "request": "^2.88.0",
-    "request-promise": "^4.2.2",
+    "request-promise": "^4.2.6",
     "twit": "^2.2.11"
   }
 }
